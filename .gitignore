@@ -1,2 +1,4 @@
 **/.idea
 **/*.iml
+ckan_clan/__init__.pyc
+ckan_clan/__pycache__/
