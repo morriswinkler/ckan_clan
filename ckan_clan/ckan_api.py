@@ -64,7 +64,7 @@ class CkanApi(object):
 
             if response_dict['result']['resources'][0]['url'] == '':
                 result['empty_urls'] += 1
-            if response_dict['result']['resources'][0]['url'].startswith('http://beta.ckan.org'):
+            if not response_dict['result']['resources'][0]['url'].startswith('http://beta.ckan.org'):
                 result['foreign_urls'] += 1
 
         return result
